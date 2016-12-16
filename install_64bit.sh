@@ -17,8 +17,8 @@ enable_opus=1
 
 enable_add_path=1
   
-src_dir="$HOME/ffmpeg_sources"
-prefix_dir="/usr/local/src/ffmpeg_build"
+src_dir="/opt/ffmpeg_sources"
+prefix_dir="/opt/ffmpeg_build"
 
 addPATH=$PATH:$prefix_dir/bin
 
@@ -55,6 +55,7 @@ run_wget()
     dir=${file%.tar.*}
   
     if [ ! -e $file ]; then
+        #ファイルが存在しない場合
         wget $url
         if [ $? -ne 0 ]; then
             print_error "wget $file" && exit 1
@@ -62,6 +63,7 @@ run_wget()
     fi
   
     case $file in
+        #解凍
         *.gz)  tar xvzf $file ;;
         *.bz2) tar xvjf $file ;;
     esac

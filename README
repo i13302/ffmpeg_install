@@ -1,1 +1,5 @@
 32bitマシン用を作成しようかと思ったけど，"yasm"とやらが64bitのみ対応してる用のなので，初っ端から諦め
+
+CentOS6.8 32bit
+
+Linux localhost 2.6.32-642.11.1.el6.i686 #1 SMP Fri Nov 18 18:48:28 UTC 2016 i686 i686 i386 GNU/Linux

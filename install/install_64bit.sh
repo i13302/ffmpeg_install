@@ -1,7 +1,6 @@
-#!/bin/sh
+﻿#!/usr/bin/env sh
 
 #・CentOS 6.8 64bit
-#http://www.jifu-labo.net/2016/08/ffmpeg_build-2/
 
 yum -y update
 yum -y install autoconf automake bzip2 cmake freetype-devel gcc gcc-c++ git wget libtool make mercurial nasm pkgconfig zlib-devel
@@ -27,7 +26,6 @@ export PKG_CONFIG_PATH="$prefix_dir/lib/pkgconfig"
 enable_option=""
   
 
-# chenge to 32bit form 64bit data.
 url_yasm="http://www.tortall.net/projects/yasm/releases/yasm-1.3.0.tar.gz"
 url_x264="https://ftp.videolan.org/pub/videolan/x264/snapshots/x264-snapshot-20160815-2245-stable.tar.bz2"
 url_x265="http://ftp.videolan.org/pub/videolan/x265/x265_2.0.tar.gz"
@@ -41,7 +39,6 @@ url_lame="http://downloads.sourceforge.net/project/lame/lame/3.99/lame-3.99.5.ta
 url_ogg="http://downloads.xiph.org/releases/ogg/libogg-1.3.2.tar.gz"
 url_theora="http://downloads.xiph.org/releases/theora/libtheora-1.1.1.tar.bz2"
 url_vorbis="http://downloads.xiph.org/releases/vorbis/libvorbis-1.3.4.tar.gz"
-# chenge to 32bit form 64bit data.
   
 print_error()
 {

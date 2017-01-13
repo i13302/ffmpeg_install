@@ -1,4 +1,4 @@
-$stat='avi';
+﻿$stat='mp4';
 $fl='*'.'.'.$stat.'*';
 
 @file=glob $fl;

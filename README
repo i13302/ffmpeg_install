@@ -2,3 +2,7 @@
 
 rename.pl ... 指定の拡張子の空白をアンダーバーに全置換
 split.pl  ... 指定の秒数で動画を分割
+=======
+CentOS6.8 32bit
+
+Linux localhost 2.6.32-642.11.1.el6.i686 #1 SMP Fri Nov 18 18:48:28 UTC 2016 i686 i686 i386 GNU/Linux
